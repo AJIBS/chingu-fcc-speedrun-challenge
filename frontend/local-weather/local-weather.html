@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Local Weather</title>
+	<!-- Locally compiled and minified Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="C:\Users\AJIBS\Desktop\fCC\bootstrap-3.3.7-dist\css\bootstrap.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="css/local-weather.css">
+	<!-- Jquery Library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid-box text-center">
+		<div class="row">
+			<h1>LOCAL WEATHER</h1>
+			<h2 id="city"></h2>
+			<h3 id="temperature"></h3>
+			<p id="icon"></p>
+			<h4 id="condition"></h4>
+			<button id="toCelsius" class="btn btn-primary btn-lg">Celsius</button>
+			<button id="toFahrenheit" class="btn btn-primary btn-lg">Fahrenheit</button><br><br>
+			<form>
+				<label>Enter a City:</label>
+				<input type="text" id="userCity" value="e.g. London">
+				<input type="button" onclick="getCityWeather()" value="Get Weather">
+			</form>
+		</div>		
+	</div>
+	<!-- Footer -->
+	<footer>Designed with <span class="glyphicon glyphicon-heart"></span> by BOLU AJIBAWO</footer>
+	<!-- Custom JS -->
+	<script type="text/javascript" src="js/local-weather.js"></script>
+</body>
+</html>
