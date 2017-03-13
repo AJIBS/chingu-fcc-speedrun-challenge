@@ -1,5 +1,8 @@
 # Build a JavaScript Calculator
 
+## Result 
+You can view the live version of my calculator on: http://codepen.io/ajibs/full/peNzvo/
+
 ## Objective
 Build an app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/rLJZrA/.
 
@@ -12,3 +15,4 @@ Build an app that is functionally similar to this: https://codepen.io/FreeCodeCa
 * User Story: I can keep chaining mathematical operations together until I hit the equal button, and the calculator will tell me the correct output.
 
 ## Notes
+
