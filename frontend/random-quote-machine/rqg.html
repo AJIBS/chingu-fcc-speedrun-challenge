@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Random Quote Generator</title>
+  <meta name="description" content="Generate cool quotes at random">
+  <!--Locally compiled and minified Boostrap CSS -->
+  <link rel="stylesheet" type="text/css" href="C:\Users\AJIBS\Desktop\fCC\bootstrap-3.3.7-dist\css\bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="css/rqg.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container-fluid box">
+		<div class="row">
+			<h2>Random Quote Generator</h2>
+			<div class="col-xs-12 well">
+				<i class="fa fa-quote-left fa-lg" aria-hidden="true"></i>
+				<p id="quote"></p>
+				<i class="fa fa-quote-right fa-lg" aria-hidden="true"></i><br>
+				<i id="author"></i>
+			</div>
+			<div class="col-xs-12">
+				<button id="tweetQuote" class="btn btn-lg button-bg"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+					 Tweet Quote
+				</button>
+				<button id="getQuote" class="btn btn-lg button-bg">New Quote</button>
+			</div>
+		</div>
+	</div>
+	<footer>Designed with <span class="glyphicon glyphicon-heart"></span> by Bolu Ajibawo</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+     // inject element, returns JSON and assigns to parseQuote, then invokes function parseQuote
+    $.getScript("http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&jsonp=parseQuote&lang=en");
+    function parseQuote(response)
+	{
+	    document.getElementById("quote").innerHTML = response.quoteText;
+	    document.getElementById("author").innerHTML = response.quoteAuthor;
+	};
+	 // On clicking "New Quote"; make api call again, execute parseQuote;
+    $("#getQuote").on("click",function()
+	{
+	  $.getScript("http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&jsonp=parseQuote&lang=en");
+	  $(this).css('background-color','#ffffff');
+	  $(this).css('color','#333333');
+	});
+	// On clicking "Tweet Quote", open twitter post box and insert the quote/author
+	$("#tweetQuote").on("click", function()
+	{
+		window.open("https://twitter.com/intent/tweet?hashtags=freecodecamp&text=" + encodeURIComponent($("#quote").html() + " ~" + $("#author").html() )) ;
+		$(this).css('background-color','#ffffff');
+	    $(this).css('color','#333333');
+	});
+	</script>
+</body>
+</html>

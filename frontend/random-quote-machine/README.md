@@ -10,4 +10,7 @@ Build an app that is functionally similar to this: https://codepen.io/FreeCodeCa
 
 * User Story: I can press a button to tweet out a quote.
 
+## Result 
+You can view the live version of my Random Quote Generator on: http://codepen.io/ajibs/full/JEKWbq/
+
 ## Notes
