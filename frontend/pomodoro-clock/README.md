@@ -12,4 +12,7 @@ Build an app that is functionally similar to this: https://codepen.io/FreeCodeCa
 
 * User Story: I can customize the length of each pomodoro.
 
+## Result 
+You can view the live version of my Pomodoro app on: http://codepen.io/ajibs/full/XMgjNz/
+
 ## Notes
