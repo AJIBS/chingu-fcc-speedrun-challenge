@@ -1,5 +1,8 @@
 # Show the Local Weather
 
+## Result 
+You can view the live version of my Local Weather app on: http://codepen.io/ajibs/full/RKpyLq/
+
 ## Objective
 Build an app that is functionally similar to this: http://codepen.io/FreeCodeCamp/full/bELRjV.
 
