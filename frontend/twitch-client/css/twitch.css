@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Khula|Telex');
+
+body{
+	background-color: #433f4a;
+	font-family: 'Khula', sans-serif;
+	color: #dad8de;
+	font-size: 16px;
+}
+
+div{
+	margin-top: 20px;
+	margin-right: 80px;
+}
+
+.row{
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 60px;
+}
+
+h1, h3{
+	font-family: 'Telex', sans-serif;
+	color: #3498db;
+}
+
