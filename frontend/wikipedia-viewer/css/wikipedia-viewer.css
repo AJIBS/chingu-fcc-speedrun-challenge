@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Sarala');
+
+body{
+	background-color: #fff;
+	color: #7647a2;
+	font-family: 'Sarala', sans-serif;
+}
+
+.box{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+a{
+	color: #DF3232;
+}
+
+input, button{
+	margin-top: 7px;
+}
+
+.intro, footer{
+	margin-top: 100px;
+	text-align: center;
+}

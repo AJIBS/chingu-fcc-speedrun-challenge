@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Wikipedia Viewer</title>
+	<!-- Locally compiled and minified Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="C:\Users\AJIBS\Desktop\fCC\bootstrap-3.3.7-dist\css\bootstrap.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/wikipedia-viewer.css">
+	<!-- Jquery Library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row intro">
+			<h1>Wikipedia Viewer</h1>
+			<input type="text" id="userQuery" placeholder=" search wikipedia" size="50" autocomplete="on" autofocus><br>
+			<button onclick="searchWiki()">Search</button><br>
+			<button onclick="randomWiki()">Feeling Nerdy</button>
+		</div>
+		<div class="box">
+			<p class="results"></p>
+		</div>
+		<!-- Footer -->
+		<footer>Designed with <span class="glyphicon glyphicon-heart"></span> by BOLU AJIBAWO</footer>
+	</div>
+	<!-- Custom JS -->
+	<script src="js/wikipedia-viewer.js"></script>	
+</body>
+</html>
+

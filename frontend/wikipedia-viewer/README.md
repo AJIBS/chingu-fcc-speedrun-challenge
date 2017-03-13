@@ -16,4 +16,7 @@ Build an app that is functionally similar to this: https://codepen.io/FreeCodeCa
 
 **Hint #3:** Use this link to experiment with Wikipedia's API.
 
+## Result 
+You can view the live version of my Wikipedia Viewer on: http://codepen.io/ajibs/full/XpzdWW/
+
 ## Notes
