@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
+
+body{
+	background-color: #ffffcc;
+	font-family: 'Hammersmith One', sans-serif;
+}
+
+.box{
+	width: 300px;
+	height: 445px;
+	margin: 10% auto 60px auto;
+	background-color: #34495e;
+	border: 3px solid #bdc3c7;
+	border-radius: 30px;
+	box-shadow: 0px 6px 25px 8px #808080;
+}
+
+#calcDisplay{
+	height: 50px;
+	width: 85%;
+	margin-top: 30px;
+	margin-bottom: 14px;
+	background-color: #D3D3D3;
+	font-size: 35px;
+}
+
+input{
+	width: 54px;
+	height: 54px;
+	margin: 6px;
+	font-size: 25px;
+	border-radius: 2px;
+	box-shadow: 0px 3px 10px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
