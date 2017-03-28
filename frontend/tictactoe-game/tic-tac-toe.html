@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" type="text/css" href="css/tic-tac-toe.css">
+	<link rel="stylesheet" type="text/css" href="C:\Users\AJIBS\Desktop\fCC\bootstrap-3.3.7-dist\css\bootstrap.min.css">
+	<script src="js/tic-tac-toe.js"></script>
+</head>
+
+<body>
+	<h1>Tic Tac Toe</h1>
+	<p>Hello, this is a game in which your objective is to defeat me. Although, I always plays first :)</p>
+	<p> Choose to play as <button class="active"onclick="userX()">X</button> or <button onclick="userO()">O</button>
+	<p> <strong>Click start to begin </strong></p>
+	<h3 id="result"></h3>
+	<button class="startGame" onclick="compPlay()">START</button>
+	<table class="grid">
+		<tr>
+			<td id="R11" onclick=userPlay('R11')></td>
+			<td id="R12" onclick=userPlay('R12')></td>
+			<td id="R13" onclick=userPlay('R13')></td>
+		</tr>
+		<tr>
+			<td id="R21" onclick="userPlay('R21')"></td>
+			<td id="R22" onclick="userPlay('R22')"></td>
+			<td id="R23" onclick="userPlay('R23')"></td>
+		</tr>
+		<tr>
+			<td id="R31" onclick=userPlay('R31')></td>
+			<td id="R32" onclick=userPlay('R32')></td>
+			<td id="R33" onclick=userPlay('R33')></td>
+		</tr>
+	</table>
+	<button onclick="window.location.reload()">RESET</button>
+</body>
+    <footer class="text-center">Designed with <span class="glyphicon glyphicon-heart"> </span> by BOLU AJIBAWO</footer>
+
+
+</html>
+
